@@ -1,7 +1,5 @@
-from src.tools.tools import web_search, scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-#output = web_search("GTA6发售日期")
 
-results = scrape_url("https://www.youtube.com/watch?v=Zy7EXDONlTY")
-
-print(results)
+topic = "2026 3A Games"
+run_research_pipeline(topic)
